@@ -1,2 +1,3 @@
 # ELEC3607_Project
 We have chosen to undertake the design and implementation of a lift; similar to what you would find in any multistory commercial and residential building. The purpose of a lift is to vertically move goods and people between levels in a building in a safe, controlled, and predictable manner. The lift we intend to implement will offer the same functionality that any commercially available lift, for example some sort of display to indicate what level the lift is on and in which direction it is traveling. The lift will operate with motor feedback so the speed is constant regardless of the load in the car.
+The main file to run the lift is in the lift test folder while the unit test folder is used for unit testing each individual component
