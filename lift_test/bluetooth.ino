@@ -16,7 +16,16 @@ void setupBlueToothConnection()
     blueToothSerial.print("\r\n+INQ=1\r\n");                // make the slave bluetooth inquirable
     Serial.println("The slave bluetooth is inquirable!");
     delay(2000);                                            // This delay is required.
-   blueToothSerial.flush();
+    blueToothSerial.flush();
+}
+
+void emergency(){
+  
+    blueToothSerial.println("=======================");             // set the bluetooth work in slave mode
+    blueToothSerial.println("EMERGENCY HELP REQUIRED");    // set the bluetooth name as "SeeedBTSlave"
+    blueToothSerial.println("=======================");   
+    blueToothSerial.flush();
+  
 }
 
 

@@ -176,7 +176,7 @@ void func8(){
 //emergency button
 void func9(){
   
-  motor_stop();
+  emergency();
   
 }
 
@@ -265,7 +265,7 @@ void setup(){
   }
 
   // set up bluetooth connection
-  //setupBlueToothConnection(); 
+  setupBlueToothConnection(); 
   
   unsigned int chanmask = (1 << PINCHAN1)|(1<<PINCHAN2);  // bit mask
   
@@ -321,8 +321,8 @@ void setup(){
     
     // check if anything was receive from the bluetooth and set all the floor values to the potentiometer value
     
-    if(Serial.available()){
-      input = Serial.parseInt();
+    if(blueToothSerial.available()){
+      input = blueToothSerial.parseInt();
       if(input==1){
           floors[0]=val;
           i++;
