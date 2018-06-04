@@ -1,3 +1,5 @@
+// code recycled from the timer counter lab 3 of ELEC3607
+
 int up = 66;    // duty cycle for going up
 int down = 49;  // duty cycle for going down
 int stopping = 53;  //duty cycle for stopping
